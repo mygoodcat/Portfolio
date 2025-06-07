@@ -1,138 +1,158 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/index.css">
-  <script type="text/javascript" lang="javascript" src="./js/jquery.js"></script>
-  <script src="./js/index.js"></script>
-  
-  <title>BaShaybah</title>
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khaled's Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+      color: #f0f0f0;
+      overflow-x: hidden;
+      position: relative;
+    }.tech-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(0,255,255,0.05) 10%, transparent 11%),
+              radial-gradient(circle, rgba(0,255,255,0.05) 10%, transparent 11%);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+  animation: moveBackground 20s linear infinite;
+  z-index: -1;
+}
 
+@keyframes moveBackground {
+  0% { background-position: 0 0, 20px 20px; }
+  100% { background-position: 40px 40px, 60px 60px; }
+}
+
+header {
+  padding: 2rem;
+  text-align: center;
+}
+
+.about, .projects, .contact {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00bcd4;
+}
+
+p, li, a, button {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.social-icons a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.07);
+  padding: 1rem;
+  border-radius: 12px;
+  color: #fff;
+  text-decoration: none;
+  width: 100px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.05);
+  background-color: rgba(0, 188, 212, 0.2);
+}
+
+.social-icons i {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.copy-btn {
+  margin-top: 0.5rem;
+  background-color: #00bcd4;
+  border: none;
+  color: #121212;
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.copy-btn:hover {
+  background-color: #26c6da;
+}
+
+  </style>
+</head>
 <body>
-	<div class="header">
-		<h2 class="name">
-			BaShaybah
-		</h2>
-		<ul class="nav">
-			<li><a href="#intro">Intro</a></li>
-			<li><a href="#projects">Projects</a></li>
-			<li><a href="#about">About</a></li>
-			<li><a href="#contact">Contact</a></li>
-		</ul>
-	</div>
-	
-	<div class="intro" id="intro">
-		<h3 class="itemtitle">Hi there 👋</h3>
-		<p class="content">
-			welcome to my portfolio <br>
-			here you can find all my stuff
-		</p>
-		<h4 class="skilltitle">My Skills</h4>
-		<div class="skills">
-			<div class="item">
-				<img src="./assets/img/tech/language-python.png"/>
-				<p>Python</p> 
-			</div>
-			<div class="item">
-				<img src="./assets/img/tech/language-javascript.png"/>
-				<p>JavaScript</p> 
-			</div>
-			<div class="item">
-				<img src="./assets/img/tech/language-c.png"/>
-				<p>Great C</p> 
-			</div>
-			<div class="item">
-				<img src="./assets/img/tech/bash.png"/>
-				<p>Bash Script</p> 
-			</div>
-			<div class="item">
-				<img src="./assets/img/tech/material-ui.png"/>
-				<p>Material Design</p> 
-			</div>
-		</div>
-	</div>
-	
-	<div class="projects" id="projects">
-		<h3 class="itemtitle">My Projects</h3>
-		
-		<div class="projectitem">
-			<h4 class="title">Kiwi</h4>
-			<div class="gallery">
-				<img src="./assets/img/projects/kiwi/0.jpg" alt="img not loaded">
-				<img src="./assets/img/projects/kiwi/1.jpg" alt="img not loaded">
-			</div>
-			<ol>
-				<li >
-					kiwi is open source project .
-				</li>
-				<li >
-					based on python kivy .
-				</li>
-				<li>
-					the main goal is to make designing kivy apps more easier .
-				</li>
-				<li>
-					editor and hot reloader will safe your time too much .
-				</li>
-			</ol>
-		</div>
-		
-		<div class="projectitem">
-			<h4 class="title">Simple Timer</h4>
-			<div class="gallery">
-				<img src="./assets/img/projects/digital/0.jpg" alt="img not loaded">
-			</div>
-		</div>
-	</div>
-	
-	<div class="about" id="about">
-		<h3 class="itemtitle">About Me</h3>
-		<p class="content">
-			🙋 - Hi i'm khalid <br>
-			🔌 - i'm an electrical engineer student <br>
-			🧑‍💻 - and i have started programming when i am 18th <br>
-			📟 - i have a simple background about electronics <br>
-			🔭 - love discovering new technologies <br>
-			🐍 - pythonic man <br>
-			💙 - i want to do my best to help other people <br>
-			🇸🇩 - فلسطين حرة بإذن الله 			🇵🇸
-			
-		</p>
-	</div>
-	
-	<div class="contact" id="contact">
-		<h3 class="itemtitle">Contact Me</h3>
-		<div class="item">
-			<img src="./assets/img/social/gmail.png"/>
-			<p>khalid.bmohammed00</p>
-		</div>
-		<div class="item">
-			<img src="./assets/img/social/twitter.png"/>
-			<a href="https://x.com/ZEROON00?s=09"><p>ZEROON00</p></a>
-		</div>
-		<div class="item">
-			<img src="./assets/img/social/facebook.png"/>
-			<a href="https://www.facebook.com/ZeroOn00"><p>ZeroOn</p></a>
-		</div>
-		<div class="item">
-			<img src="./assets/img/social/youtube.png"/>
-			<a href="https://youtube.com/@zero0n00?si=NyhCIYsEUFty3y_S"><p>zero0n00</p></a>
-		</div>
-		<div class="item">
-			<img src="./assets/img/social/linkedin.png"/>
-			<p>My Linkedin</p>
-		</div>
-		<div class="item">
-			<img src="./assets/img/social/twitch.png"/>
-			<p>My Twitch</p>
-		</div>
-		<div class="item">
-			<img src="./assets/img/social/patreon.png"/>
-			<p>My Patreon</p>
-		</div>
-	</div>
-	
-</body>
+  <div class="tech-bg"></div>  <header>
+    <h1>Engineer by Degree. Developer by Passion.</h1>
+  </header>  <section class="about">
+    <h2>👋 About Me</h2>
+    <p>
+      Hi! I'm <strong>Khaled</strong>, an electrical engineer with a strong passion for programming and technology.
+      I enjoy learning new skills, exploring how things work, and continuously improving myself.
+      I'm proficient in languages like <strong>Python</strong>, <strong>C</strong>, and <strong>Bash</strong>, and I love building solutions that bridge the gap between software and engineering.
+    </p>
+  </section>  <section class="projects">
+    <h2>🚀 Projects</h2>
+    <ul>
+      <li><strong>Kiwi</strong> – A lightweight and efficient project built to simplify tasks with Python.</li>
+      <li><strong>KivyKing</strong> – A powerful UI/UX toolkit demo using Kivy to create dynamic mobile interfaces.</li>
+    </ul>
+  </section>  <section class="contact">
+    <h2>📬 Contact Me</h2>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=61573577424789" target="_blank">
+        <i class="fab fa-facebook-square"></i>
+        <span>Facebook</span>
+        <button class="copy-btn" onclick="copyToClipboard('https://www.facebook.com/profile.php?id=61573577424789')">Copy</button>
+      </a>
+      <a href="https://github.com/mygoodcat" target="_blank">
+        <i class="fab fa-github"></i>
+        <span>GitHub</span>
+        <button class="copy-btn" onclick="copyToClipboard('@mygoodcat')">Copy</button>
+      </a>
+      <a href="https://t.me/myg00dcat" target="_blank">
+        <i class="fab fa-telegram"></i>
+        <span>Telegram</span>
+        <button class="copy-btn" onclick="copyToClipboard('@myg00dcat')">Copy</button>
+      </a>
+    </div>
+  </section>  <script>
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Copied to clipboard: " + text);
+      });
+    }
+  </script></body>
 </html>
