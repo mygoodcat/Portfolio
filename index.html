@@ -3,126 +3,90 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Khaled's Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+    body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
-      color: #f0f0f0;
+      background-color: #045966;
+      color: white;
       overflow-x: hidden;
-      position: relative;
-    }.tech-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle, rgba(0,255,255,0.05) 10%, transparent 11%),
-              radial-gradient(circle, rgba(0,255,255,0.05) 10%, transparent 11%);
-  background-size: 40px 40px;
-  background-position: 0 0, 20px 20px;
-  animation: moveBackground 20s linear infinite;
-  z-index: -1;
-}
-
-@keyframes moveBackground {
-  0% { background-position: 0 0, 20px 20px; }
-  100% { background-position: 40px 40px, 60px 60px; }
-}
-
-header {
-  padding: 2rem;
-  text-align: center;
-}
-
-.about, .projects, .contact {
-  max-width: 800px;
-  margin: 2rem auto;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  padding: 2rem;
-  border-radius: 16px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #00bcd4;
-}
-
-p, li, a, button {
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-
-ul {
-  padding-left: 1.5rem;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 1.5rem;
-  flex-wrap: wrap;
-}
-
-.social-icons a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(255, 255, 255, 0.07);
-  padding: 1rem;
-  border-radius: 12px;
-  color: #fff;
-  text-decoration: none;
-  width: 100px;
-  transition: transform 0.3s, background-color 0.3s;
-}
-
-.social-icons a:hover {
-  transform: scale(1.05);
-  background-color: rgba(0, 188, 212, 0.2);
-}
-
-.social-icons i {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.copy-btn {
-  margin-top: 0.5rem;
-  background-color: #00bcd4;
-  border: none;
-  color: #121212;
-  padding: 4px 8px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 0.85rem;
-}
-
-.copy-btn:hover {
-  background-color: #26c6da;
-}
-
+    }
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    section {
+      max-width: 800px;
+      margin: 3rem auto;
+      
+      
+      padding: 2.5rem;
+      border-radius: 20px;
+      
+      
+    }
+    h1, h2 {
+      color: #9eeff7;
+      text-align: center;
+      margin-bottom: 1rem;
+      font-family: Courier;
+    }
+    #hero {
+      font-size: 50px;
+      font-family: Courier;
+      color: #9eeff7;
+    }
+    p, li {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      font-family: Monospace;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      margin-top: 1rem;
+    }
+    .social-icons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(255, 255, 255, 0.07);
+      padding: 0.8rem;
+      border-radius: 50%;
+      color: #fff;
+      text-decoration: none;
+      width: 50px;
+      height: 50px;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+    .social-icons a:hover {
+      transform: scale(1.1);
+      background-color: rgba(0, 188, 212, 0.3);
+    }
+    .social-icons i {
+      font-size: 1.4rem;
+    }
   </style>
 </head>
 <body>
-  <div class="tech-bg"></div>  <header>
-    <h1>Engineer by Degree. Developer by Passion.</h1>
-  </header>  <section class="about">
-    <h2>👋 About Me</h2>
-    <p>
-      Hi! I'm <strong>Khaled</strong>, an electrical engineer with a strong passion for programming and technology.
-      I enjoy learning new skills, exploring how things work, and continuously improving myself.
-      I'm proficient in languages like <strong>Python</strong>, <strong>C</strong>, and <strong>Bash</strong>, and I love building solutions that bridge the gap between software and engineering.
-    </p>
+  <div id="particles-js"></div>  <section class="hero">
+    <h1 id="hero">Crafting Code, Powering Ideas.</h1>
+    <p style="text-align:center;">Engineer by Degree. Developer by Passion.</p>
+  </section>  <section class="about">
+    <p>Hi! I'm <strong>Khaled</strong>, an electrical engineer with a strong passion for programming and technology. I enjoy learning new skills, exploring how things work, and continuously improving myself. I'm proficient in languages like <strong>Python</strong>, <strong>C</strong>, and <strong>Bash</strong>, and I love building solutions that bridge the gap between software and engineering.</p>
   </section>  <section class="projects">
     <h2>🚀 Projects</h2>
     <ul>
@@ -130,29 +94,93 @@ ul {
       <li><strong>KivyKing</strong> – A powerful UI/UX toolkit demo using Kivy to create dynamic mobile interfaces.</li>
     </ul>
   </section>  <section class="contact">
-    <h2>📬 Contact Me</h2>
     <div class="social-icons">
       <a href="https://www.facebook.com/profile.php?id=61573577424789" target="_blank">
-        <i class="fab fa-facebook-square"></i>
-        <span>Facebook</span>
-        <button class="copy-btn" onclick="copyToClipboard('https://www.facebook.com/profile.php?id=61573577424789')">Copy</button>
+        <i class="fab fa-facebook-f"></i>
       </a>
       <a href="https://github.com/mygoodcat" target="_blank">
         <i class="fab fa-github"></i>
-        <span>GitHub</span>
-        <button class="copy-btn" onclick="copyToClipboard('@mygoodcat')">Copy</button>
       </a>
       <a href="https://t.me/myg00dcat" target="_blank">
-        <i class="fab fa-telegram"></i>
-        <span>Telegram</span>
-        <button class="copy-btn" onclick="copyToClipboard('@myg00dcat')">Copy</button>
+        <i class="fab fa-telegram-plane"></i>
       </a>
     </div>
   </section>  <script>
-    function copyToClipboard(text) {
-      navigator.clipboard.writeText(text).then(() => {
-        alert("Copied to clipboard: " + text);
-      });
-    }
+    particlesJS("particles-js", {
+      particles: {
+        number: {
+          value: 60,
+          density: {
+            enable: true,
+            value_area: 1000
+          }
+        },
+        color: {
+          value: "#00bcd4"
+        },
+        shape: {
+          type: "line",
+          stroke: {
+            width: 1,
+            color: "#00bcd4"
+          },
+          polygon: {
+            nb_sides: 6
+          }
+        },
+        opacity: {
+          value: 0.1,
+          random: false,
+          anim: {
+            enable: false
+          }
+        },
+        size: {
+          value: 1.5,
+          random: true,
+          anim: {
+            enable: false
+          }
+        },
+        line_linked: {
+          enable: true,
+          distance: 140,
+          color: "#00bcd4",
+          opacity: 0.2,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 0.8,
+          direction: "none",
+          random: true,
+          straight: false,
+          out_mode: "out",
+          bounce: false
+        }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: {
+            enable: true,
+            mode: "grab"
+          },
+          onclick: {
+            enable: false
+          },
+          resize: true
+        },
+        modes: {
+          grab: {
+            distance: 150,
+            line_linked: {
+              opacity: 0.3
+            }
+          }
+        }
+      },
+      retina_detect: true
+    });
   </script></body>
 </html>
