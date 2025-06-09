@@ -1,99 +1,198 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Khaled's Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
+
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #045966;
-      color: white;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #e0f7fa;
       overflow-x: hidden;
+      line-height: 1.7;
     }
+
     #particles-js {
       position: fixed;
       width: 100%;
       height: 100%;
       z-index: -1;
     }
+
     section {
-      max-width: 800px;
-      margin: 3rem auto;
+      max-width: 850px;
+      margin: 4rem auto;
       
-      
-      padding: 2.5rem;
+      padding: 3rem 2rem;
       border-radius: 20px;
       
-      
     }
+
     h1, h2 {
-      color: #9eeff7;
+      color: #80deea;
       text-align: center;
-      margin-bottom: 1rem;
-      font-family: Courier;
+      margin-bottom: 1.5rem;
+      font-family: 'Roboto Mono', monospace;
     }
+
     #hero {
-      font-size: 50px;
-      font-family: Courier;
-      color: #9eeff7;
+      font-size: 42px;
+      font-weight: 800;
     }
+
     p, li {
       font-size: 1.1rem;
-      line-height: 1.6;
-      font-family: Monospace;
     }
+
     ul {
       padding-left: 1.5rem;
     }
+
+    strong {
+      color: #ffffff;
+    }
+
     .social-icons {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 1.2rem;
-      margin-top: 1rem;
+      margin-top: 2rem;
     }
+
     .social-icons a {
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: rgba(255, 255, 255, 0.07);
-      padding: 0.8rem;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 0.9rem;
       border-radius: 50%;
-      color: #fff;
+      color: #e0f7fa;
       text-decoration: none;
-      width: 50px;
-      height: 50px;
+      width: 52px;
+      height: 52px;
       transition: transform 0.3s, background-color 0.3s;
     }
+
     .social-icons a:hover {
-      transform: scale(1.1);
-      background-color: rgba(0, 188, 212, 0.3);
+      transform: scale(1.15);
+      background-color: rgba(0, 188, 212, 0.4);
     }
+
     .social-icons i {
       font-size: 1.4rem;
     }
   </style>
 </head>
 <body>
-  <div id="particles-js"></div>  <section class="hero">
+  <div id="particles-js"></div>
+
+  <section class="hero">
     <h1 id="hero">Crafting Code, Powering Ideas.</h1>
     <p style="text-align:center;">Engineer by Degree. Developer by Passion.</p>
-  </section>  <section class="about">
-    <p>Hi! I'm <strong>Khaled</strong>, an electrical engineer with a strong passion for programming and technology. I enjoy learning new skills, exploring how things work, and continuously improving myself. I'm proficient in languages like <strong>Python</strong>, <strong>C</strong>, and <strong>Bash</strong>, and I love building solutions that bridge the gap between software and engineering.</p>
-  </section>  <section class="projects">
-    <h2>🚀 Projects</h2>
-    <ul>
-      <li><strong>Kiwi</strong> – A lightweight and efficient project built to simplify tasks with Python.</li>
-      <li><strong>KivyKing</strong> – A powerful UI/UX toolkit demo using Kivy to create dynamic mobile interfaces.</li>
-    </ul>
-  </section>  <section class="contact">
+  </section>
+
+  <section class="about">
+  <h2>About Me</h2>
+<p style="text-align: center; max-width: 600px; margin: 0 auto 1.5rem; line-height: 1.8; font-size: 1.05rem;">
+  My name is Khaled Babiker, and I'm from Khartoum, Sudan.<br>
+  I'm currently pursuing a degree in Electrical Engineering at Sudan University of Science and Technology.<br><br>
+
+  Alongside engineering, I have a strong passion for programming and technology. I'm always curious about how things work and constantly strive to improve and learn new skills.<br><br>
+
+  I have experience in Python, C, and Bash, and I enjoy building tools and solutions that connect the world of software with electrical systems.<br><br>
+
+  I'm fluent in both Arabic and English .<br><br>
+
+  I also work as a web developer, with a special interest in creating simple and meaningful icon designs that communicate ideas with clarity and creativity. 🎨✨
+</p>
+  <div style="margin-top:128px;">
+  <h2>Skills</h2>
+  <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; ">
+    
+  <i class="devicon-html5-plain " title="html5" style="font-size: 1.8rem;"></i>
+  <i class="devicon-css3-plain " title="css3" style="font-size: 1.8rem;"></i>
+  <i class="devicon-javascript-plain " title="js" style="font-size: 1.8rem;"></i>
+  <i class="devicon-python-plain " title="Python" style="font-size: 1.8rem;"></i>
+  <i class="devicon-c-plain " title="C" style="font-size: 1.8rem;"></i>
+  <i class="devicon-bash-plain " title="Bash" style="font-size: 1.8rem;"></i>
+  <i class="devicon-gimp-plain " title="gimp" style="font-size: 1.8rem;"></i>
+  <i class="devicon-flask-plain " title="flask" style="font-size: 1.8rem;"></i>
+  <i class="devicon-linux-plain " title="linux" style="font-size: 1.8rem;"></i>
+  <i class="devicon-vim-plain " title="vim" style="font-size: 1.8rem;"></i>
+  <i class="devicon-git-plain " title="git" style="font-size: 1.8rem;"></i>
+  <i class="devicon-django-plain " title="django" style="font-size: 1.8rem;"></i>
+  <i class="devicon-llvm-plain " title="llvm" style="font-size: 1.8rem;"></i>
+  </div></div>
+</section>
+  <section class="projects">
+    <h2>Projects</h2>
+<div style="max-width: 600px; margin: 0 auto; line-height: 1.8; font-size: 1.05rem;">
+<div style="max-width: 600px; margin: 0 auto; line-height: 1.8; font-size: 1.05rem;">
+  <style>
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #4f46e5;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.25s ease;
+    }
+
+    .project-link:hover {
+      color: #1d4ed8;
+      text-decoration: underline;
+    }
+
+    .project-link svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+    }
+  </style>
+
+  <p>
+    Kiwi – A Python-based tool designed to simplify daily tasks in a lightweight and efficient way.<br>
+    <a class="project-link" href="https://github.com/mygoodcat/kiwi" target="_blank">
+      <svg viewBox="0 0 16 16" fill="none"><path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.1 0 0 .67-.21 2.2.82a7.5 7.5 0 012 0c1.53-1.03 2.2-.82 2.2-.82.44 1.09.16 1.9.08 2.1.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8 8 0 0016 8c0-4.42-3.58-8-8-8z" fill="currentColor"/></svg>
+      View on GitHub
+    </a>
+  </p>
+
+  <p>
+    KivyKing – A UI/UX demonstration using the Kivy framework to build interactive and modern mobile interfaces.<br>
+    <a class="project-link" href="https://github.com/mygoodcat/kivyking" target="_blank">
+      <svg viewBox="0 0 16 16" fill="none"><path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.1 0 0 .67-.21 2.2.82a7.5 7.5 0 012 0c1.53-1.03 2.2-.82 2.2-.82.44 1.09.16 1.9.08 2.1.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8 8 0 0016 8c0-4.42-3.58-8-8-8z" fill="currentColor"/></svg>
+      View on GitHub
+    </a>
+  </p>
+
+  <p>
+    kvFileExplorer – A simple and user-friendly file explorer built with Kivy, providing smooth folder and file navigation in a graphical interface.<br>
+    <a class="project-link" href="https://github.com/mygoodcat/kvFileExplorer" target="_blank">
+      <svg viewBox="0 0 16 16" fill="none"><path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.1 0 0 .67-.21 2.2.82a7.5 7.5 0 012 0c1.53-1.03 2.2-.82 2.2-.82.44 1.09.16 1.9.08 2.1.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8 8 0 0016 8c0-4.42-3.58-8-8-8z" fill="currentColor"/></svg>
+      View on GitHub
+    </a>
+  </p>
+</div>
+</div>
+  </section>
+
+  <section class="contact">
     <div class="social-icons">
       <a href="https://www.facebook.com/profile.php?id=61573577424789" target="_blank">
         <i class="fab fa-facebook-f"></i>
@@ -105,55 +204,40 @@
         <i class="fab fa-telegram-plane"></i>
       </a>
     </div>
-  </section>  <script>
+  </section>
+
+  <script>
     particlesJS("particles-js", {
       particles: {
-        number: {
-          value: 60,
-          density: {
-            enable: true,
-            value_area: 1000
-          }
-        },
-        color: {
-          value: "#00bcd4"
-        },
+        number: { value: 80, density: { enable: true, value_area: 800 }},
+        color: { value: "#00bcd4" },
         shape: {
-          type: "line",
-          stroke: {
-            width: 1,
-            color: "#00bcd4"
-          },
-          polygon: {
-            nb_sides: 6
-          }
+          type: "circle",
+          stroke: { width: 0, color: "#000000" },
+          polygon: { nb_sides: 5 },
         },
         opacity: {
-          value: 0.1,
-          random: false,
-          anim: {
-            enable: false
-          }
+          value: 0.4,
+          random: true,
+          anim: { enable: false }
         },
         size: {
-          value: 1.5,
+          value: 3,
           random: true,
-          anim: {
-            enable: false
-          }
+          anim: { enable: false }
         },
         line_linked: {
           enable: true,
-          distance: 140,
+          distance: 130,
           color: "#00bcd4",
-          opacity: 0.2,
+          opacity: 0.3,
           width: 1
         },
         move: {
           enable: true,
-          speed: 0.8,
+          speed: 1,
           direction: "none",
-          random: true,
+          random: false,
           straight: false,
           out_mode: "out",
           bounce: false
@@ -162,25 +246,19 @@
       interactivity: {
         detect_on: "canvas",
         events: {
-          onhover: {
-            enable: true,
-            mode: "grab"
-          },
-          onclick: {
-            enable: false
-          },
+          onhover: { enable: true, mode: "grab" },
+          onclick: { enable: false },
           resize: true
         },
         modes: {
           grab: {
-            distance: 150,
-            line_linked: {
-              opacity: 0.3
-            }
+            distance: 140,
+            line_linked: { opacity: 0.4 }
           }
         }
       },
       retina_detect: true
     });
-  </script></body>
+  </script>
+</body>
 </html>
